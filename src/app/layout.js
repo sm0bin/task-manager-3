@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Mulish } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
-import { fonts } from './fonts'
+// import { fonts } from './fonts'
 
-const inter = Inter({ subsets: ['latin'] })
+const mulish = Mulish({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={fonts.rubik.variable}>
-      <body className={inter.className}>
+    <html lang="en">
+      <body className={mulish.className}>
         <Providers>{children}</Providers>
       </body>
     </html>
